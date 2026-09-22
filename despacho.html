@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El despacho y cómo trabajamos | Hechos Abogados</title>
+  <meta name="description" content="Quiénes somos, cómo llevamos cada caso y cómo te informamos de cada movimiento, en Hechos Abogados.">
+  <!-- Web de demostració: no s'indexa (PLA.md §Honestedat). -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F7F7F5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/besley-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <a class="salta" href="#contenido">Saltar al contenido</a>
+
+  <header class="cap">
+    <div class="wrap cap-in">
+      <a class="marca" href="index.html" aria-label="Hechos Abogados, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 9h22M5 16h22M5 23h22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><rect x="18" y="4" width="4.5" height="24" rx="1" fill="#A3192D"/></svg>
+        <span>Hechos<small>abogados</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="divorcios.html">Divorcios</a>
+        <a href="negligencias-medicas.html">Negligencias</a>
+        <a href="clausulas-bancarias.html">Cláusulas</a>
+        <a href="honorarios.html">Honorarios</a>
+        <a href="despacho.html">Despacho</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <!-- Desplegable d'idioma (plantilla: <skill web-demo>/assets/i18n/tria-idioma.html).
+           NOMÉS existeix si el JS ha arrencat: js/i18n.js posa `te-js` a
+           l'<html> des del <head>. -->
+      <div class="tria-idioma" data-idioma-tria>
+        <button class="tria-idioma-boto" type="button" data-idioma-boto
+                aria-expanded="false" aria-haspopup="true"
+                aria-label="Idioma de la página">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8ZM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96ZM4.26 14a7.85 7.85 0 0 1 0-4h3.38a16.6 16.6 0 0 0-.14 2c0 .68.06 1.34.14 2Zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16Zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8ZM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96ZM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2Zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56ZM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38a7.85 7.85 0 0 1 0 4Z"/></svg>
+          <span data-idioma-actual data-sense-traduir>ES</span>
+          <svg class="tria-idioma-punta" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 15 6 9h12z"/></svg>
+        </button>
+        <ul class="tria-idioma-menu" data-idioma-menu data-sense-traduir hidden>
+          <li><button type="button" data-idioma-opcio="ca" lang="ca">Català</button></li>
+          <li><button type="button" data-idioma-opcio="es" lang="es">Castellano</button></li>
+          <li><button type="button" data-idioma-opcio="en" lang="en">English</button></li>
+        </ul>
+      </div>
+      <a class="cap-tel" href="tel:+34600000000">600 000 000</a>
+      <a class="btn btn-principal" href="tengo-caso.html">¿Tengo caso?</a>
+      <button class="nav-obre" type="button" aria-expanded="false" aria-controls="nav"><span></span><span class="visually-hidden">Menú</span></button>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="hero hero-compacte">
+      <img class="hero-img" src="assets/img/despacho.jpg" alt="" width="1200" height="800" fetchpriority="high">
+      <div class="wrap hero-in">
+        <span class="cinta" aria-hidden="true"></span>
+        <h1>El despacho</h1>
+        <p class="hero-sub">Tres abogados, tres áreas y una forma de trabajar: primero, los hechos.</p>
+      </div>
+    </section>
+
+    <section class="seccio" aria-labelledby="t-relato">
+      <div class="wrap dues-col">
+        <div>
+          <h2 id="t-relato">Por qué nos llamamos así</h2>
+        </div>
+        <div>
+          <p>En un escrito judicial, antes de citar ninguna ley están los hechos: qué ha pasado, contado en orden. Nosotros empezamos igual. Por eso, lo primero que te pedimos no es un problema legal, es tu historia: «Primero, cuéntanos qué ha pasado».</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccio seccio-lino" aria-labelledby="t-equipo">
+      <div class="wrap">
+        <div class="intro">
+          <h2 id="t-equipo">Quién lleva tu caso</h2>
+        </div>
+        <ul class="equip">
+          <li>
+            <img src="assets/img/equipo-1.jpg" alt="Toga negra colgada junto a una ventana" width="800" height="800" loading="lazy">
+            <h3>Marta Ibáñez Roca</h3>
+            <p class="rol">Familia y divorcios</p>
+            <p class="col">Col. nº 00.000 <span class="ex">(ejemplo)</span></p>
+            <p>«Antes de hablar de leyes, prefiero entender qué necesita cada familia: no hay dos divorcios iguales.»</p>
+          </li>
+          <li>
+            <img src="assets/img/equipo-2.jpg" alt="Abogado de espaldas leyendo un expediente frente a una ventana" width="800" height="800" loading="lazy">
+            <h3>Andrés Molina Serra</h3>
+            <p class="rol">Negligencias médicas</p>
+            <p class="col">Col. nº 00.000 <span class="ex">(ejemplo)</span></p>
+            <p>«Sin un informe pericial claro no le doy una cifra a nadie: primero se mira el caso con calma.»</p>
+          </li>
+          <li>
+            <img src="assets/img/equipo-3.jpg" alt="Expedientes atados con cinta roja en una estantería" width="800" height="800" loading="lazy">
+            <h3>Lucía Ferrer Pons</h3>
+            <p class="rol">Cláusulas bancarias</p>
+            <p class="col">Col. nº 00.000 <span class="ex">(ejemplo)</span></p>
+            <p>«Cada hipoteca es un papel distinto: hay que leerlo entero antes de prometer nada.»</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccio" aria-labelledby="t-informa">
+      <div class="wrap dues-col">
+        <div>
+          <h2 id="t-informa">Cómo te informamos del caso</h2>
+        </div>
+        <div class="avis-termini">
+          <p>Cuando hay una novedad, te la contamos por escrito, en un mensaje corto y sin tecnicismos, antes de que pasen 48 horas. No hace falta que llames para saber en qué punto está tu caso: te lo decimos nosotros primero.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccio seccio-lino" aria-labelledby="t-passos">
+      <div class="wrap">
+        <div class="intro">
+          <h2 id="t-passos">Cómo trabajamos</h2>
+          <p>Siempre en el mismo orden, como los hechos en un escrito.</p>
+        </div>
+        <ol class="passos">
+          <li><span class="ordinal">Primero</span><h3>Nos cuentas qué ha pasado</h3><p>Con el test, por teléfono o en el despacho. Leemos tus papeles sin coste.</p></li>
+          <li><span class="ordinal">Segundo</span><h3>Te decimos si hay caso</h3><p>Con lo que podría salir bien, lo que podría salir mal y el precio, todo por escrito.</p></li>
+          <li><span class="ordinal">Tercero</span><h3>Reclamamos</h3><p>Primero intentamos un acuerdo. Si no llega, vamos al juzgado.</p></li>
+          <li><span class="ordinal">Cuarto</span><h3>Te avisamos de cada paso</h3><p>Cada vez que se mueve tu expediente, te lo contamos en menos de 48 horas.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="seccio cta-final" aria-labelledby="t-cta">
+      <div class="wrap">
+        <div>
+          <h2 id="t-cta">¿Tienes caso? Lo sabrás en dos minutos.</h2>
+          <p>Unas preguntas sencillas, sin datos personales hasta el final. Te llevas una orientación por escrito y, si quieres, hablamos por WhatsApp.</p>
+        </div>
+        <a class="btn btn-principal" href="tengo-caso.html">Hacer el test</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="peu">
+    <div class="wrap">
+      <div class="peu-dalt">
+        <div>
+          <a class="marca" href="index.html" aria-label="Hechos Abogados, inicio">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 9h22M5 16h22M5 23h22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><rect x="18" y="4" width="4.5" height="24" rx="1" fill="#F2A7AF"/></svg>
+            <span>Hechos<small>abogados</small></span>
+          </a>
+          <p>Divorcios, negligencias médicas y cláusulas bancarias para particulares. Primero, los hechos.</p>
+        </div>
+        <div>
+          <h2>Áreas</h2>
+          <ul>
+            <li><a href="divorcios.html">Divorcios y familia</a></li>
+            <li><a href="negligencias-medicas.html">Negligencias médicas</a></li>
+            <li><a href="clausulas-bancarias.html">Cláusulas bancarias</a></li>
+            <li><a href="tengo-caso.html">¿Tengo caso?</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Despacho</h2>
+          <ul>
+            <li><a href="honorarios.html">Honorarios</a></li>
+            <li><a href="despacho.html">Quiénes somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="tel:+34600000000">600 000 000</a></li>
+          </ul>
+        </div>
+      </div>
+      <dl class="peu-dades">
+        <div><dt>Colegiación</dt><dd>Ilustre Colegio de la Abogacía, nº 00.000 <span class="ex">(ejemplo)</span></dd></div>
+        <div><dt>Horario</dt><dd>Lunes a viernes de 9:00 a 19:00</dd></div>
+      </dl>
+      <div class="peu-baix">
+        <span>© 2026 Hechos Abogados</span>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-flota" href="tengo-caso.html" aria-label="Cuéntanos tu caso y seguimos por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+    <span>Cuéntanos tu caso</span>
+  </a>
+
+  <script src="js/traduccions.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

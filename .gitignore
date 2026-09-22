@@ -1,0 +1,17 @@
+# Documents interns (el repo és públic)
+CLAUDE.md
+PLA*
+GATES.md
+HISTORIAL*.md
+REUNI*.md
+NOTES*.md
+
+# Secrets i entorn local
+.env*
+.dev.vars
+.wrangler/
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db

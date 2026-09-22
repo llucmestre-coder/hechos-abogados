@@ -1,0 +1,16 @@
+# Cloudflare Pages (connectat a GitHub). Web estàtica a l'arrel + Functions a /functions.
+# Secrets (NO aquí: el repo és públic) — `wrangler pages secret put <NOM> --project-name hechos-abogados`:
+#   TURNSTILE_SECRET, BREVO_API_KEY, BREVO_SENDER, WHATSAPP, ADMIN_PASSWORD
+name = "hechos-abogados"
+pages_build_output_dir = "."
+compatibility_date = "2026-09-01"
+
+[[kv_namespaces]]
+binding = "CODIS"
+id = "83c10fc238594a28b0e28daac9871a82"
+
+# Contactes de «¿Tengo caso?» (seguiment). Esquema: schema.sql. Llista privada a /admin.
+[[d1_databases]]
+binding = "LEADS"
+database_name = "hechos-leads"
+database_id = "a3a8e126-03a0-4116-a140-37bcd01ecc3e"
