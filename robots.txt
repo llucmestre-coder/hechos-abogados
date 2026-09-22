@@ -1,0 +1,3 @@
+# Web de demostració: no s'indexa.
+User-agent: *
+Disallow: /

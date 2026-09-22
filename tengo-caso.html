@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Tengo caso? Compruébalo en 2 minutos | Hechos Abogados</title>
+  <meta name="description" content="Responde unas preguntas sobre tu caso (divorcio, negligencia médica o cláusulas bancarias) y recibe una orientación gratuita en tu correo.">
+  <!-- Web de demostració: no s'indexa (PLA.md §Honestedat). -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F7F7F5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/besley-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/calculadora.css">
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <a class="salta" href="#contenido">Saltar al contenido</a>
+
+  <header class="cap">
+    <div class="wrap cap-in">
+      <a class="marca" href="index.html" aria-label="Hechos Abogados, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 9h22M5 16h22M5 23h22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><rect x="18" y="4" width="4.5" height="24" rx="1" fill="#A3192D"/></svg>
+        <span>Hechos<small>abogados</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="divorcios.html">Divorcios</a>
+        <a href="negligencias-medicas.html">Negligencias</a>
+        <a href="clausulas-bancarias.html">Cláusulas</a>
+        <a href="honorarios.html">Honorarios</a>
+        <a href="despacho.html">Despacho</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <!-- Desplegable d'idioma (plantilla: <skill web-demo>/assets/i18n/tria-idioma.html).
+           NOMÉS existeix si el JS ha arrencat: js/i18n.js posa `te-js` a
+           l'<html> des del <head>. -->
+      <div class="tria-idioma" data-idioma-tria>
+        <button class="tria-idioma-boto" type="button" data-idioma-boto
+                aria-expanded="false" aria-haspopup="true"
+                aria-label="Idioma de la página">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8ZM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96ZM4.26 14a7.85 7.85 0 0 1 0-4h3.38a16.6 16.6 0 0 0-.14 2c0 .68.06 1.34.14 2Zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16Zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8ZM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96ZM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2Zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56ZM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38a7.85 7.85 0 0 1 0 4Z"/></svg>
+          <span data-idioma-actual data-sense-traduir>ES</span>
+          <svg class="tria-idioma-punta" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 15 6 9h12z"/></svg>
+        </button>
+        <ul class="tria-idioma-menu" data-idioma-menu data-sense-traduir hidden>
+          <li><button type="button" data-idioma-opcio="ca" lang="ca">Català</button></li>
+          <li><button type="button" data-idioma-opcio="es" lang="es">Castellano</button></li>
+          <li><button type="button" data-idioma-opcio="en" lang="en">English</button></li>
+        </ul>
+      </div>
+      <a class="cap-tel" href="tel:+34600000000">600 000 000</a>
+      <a class="btn btn-principal" href="tengo-caso.html">¿Tengo caso?</a>
+      <button class="nav-obre" type="button" aria-expanded="false" aria-controls="nav"><span></span><span class="visually-hidden">Menú</span></button>
+    </div>
+  </header>
+
+  <main id="contenido" class="calc">
+    <div class="wrap calc-in">
+      <div class="calc-folio" id="calc">
+        <span class="calc-cinta" aria-hidden="true"></span>
+        <div class="calc-cap">
+          <button class="calc-enrere" type="button" data-calc-enrere hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Atrás
+          </button>
+          <div class="calc-progres" role="progressbar" aria-label="Progreso" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><i></i></div>
+          <p class="calc-comptador" aria-hidden="true"><span data-calc-num>1</span>/5</p>
+        </div>
+        <ul class="calc-resum" data-calc-resum aria-label="Tus respuestas"></ul>
+
+        <!-- 1. Àrea -->
+        <section class="calc-pas" data-pas="area" aria-labelledby="p-area">
+          <p class="calc-intro">En dos minutos sabrás si tienes caso, cuánto podría costarte y si todavía estás a tiempo.</p>
+          <h1 id="p-area" tabindex="-1">¿Qué te ha pasado?</h1>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="divorcio"><span class="calc-op-nom">Divorcio o separación</span><span class="calc-op-desc">Custodia, pensiones, vivienda y bienes.</span></button>
+            <button class="calc-op" type="button" data-valor="negligencia"><span class="calc-op-nom">Negligencia médica</span><span class="calc-op-desc">Sanidad pública, privada o mutua.</span></button>
+            <button class="calc-op" type="button" data-valor="clausulas"><span class="calc-op-nom">Hipoteca o tarjeta</span><span class="calc-op-desc">Cláusula suelo, gastos, IRPH o revolving.</span></button>
+          </div>
+        </section>
+
+        <!-- Divorci -->
+        <section class="calc-pas" data-pas="acuerdo" aria-labelledby="p-acuerdo" hidden>
+          <h2 id="p-acuerdo" tabindex="-1">¿Estáis de acuerdo?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="todo"><span class="calc-op-nom">En todo</span></button>
+            <button class="calc-op" type="button" data-valor="parte"><span class="calc-op-nom">En parte</span></button>
+            <button class="calc-op" type="button" data-valor="no"><span class="calc-op-nom">No</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="hijos" aria-labelledby="p-hijos" hidden>
+          <h2 id="p-hijos" tabindex="-1">¿Hay hijos menores?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="si"><span class="calc-op-nom">Sí</span></button>
+            <button class="calc-op" type="button" data-valor="no"><span class="calc-op-nom">No</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="bienes" aria-labelledby="p-bienes" hidden>
+          <h2 id="p-bienes" tabindex="-1">¿Tenéis vivienda o bienes en común?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="si"><span class="calc-op-nom">Sí</span></button>
+            <button class="calc-op" type="button" data-valor="no"><span class="calc-op-nom">No</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="cuando" aria-labelledby="p-cuando" hidden>
+          <h2 id="p-cuando" tabindex="-1">¿Cuándo quieres empezar?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="ya"><span class="calc-op-nom">Lo antes posible</span></button>
+            <button class="calc-op" type="button" data-valor="meses"><span class="calc-op-nom">En los próximos meses</span></button>
+            <button class="calc-op" type="button" data-valor="informando"><span class="calc-op-nom">Solo me estoy informando</span></button>
+          </div>
+        </section>
+
+        <!-- Negligència -->
+        <section class="calc-pas" data-pas="donde" aria-labelledby="p-donde" hidden>
+          <h2 id="p-donde" tabindex="-1">¿Dónde te atendieron?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="publica"><span class="calc-op-nom">Sanidad pública</span><span class="calc-op-desc">Hospital o centro de salud público.</span></button>
+            <button class="calc-op" type="button" data-valor="privada"><span class="calc-op-nom">Privada o mutua</span><span class="calc-op-desc">Clínica privada o seguro médico.</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="fecha" aria-labelledby="p-fecha" hidden>
+          <h2 id="p-fecha" tabindex="-1">¿Cuándo pasó?</h2>
+          <p class="calc-ajuda">Si te quedaron secuelas, cuenta desde que te dieron el alta o se estabilizaron.</p>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="menos1"><span class="calc-op-nom">Menos de 1 año</span></button>
+            <button class="calc-op" type="button" data-valor="1a5"><span class="calc-op-nom">Entre 1 y 5 años</span></button>
+            <button class="calc-op" type="button" data-valor="mas5"><span class="calc-op-nom">Más de 5 años</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="secuelas" aria-labelledby="p-secuelas" hidden>
+          <h2 id="p-secuelas" tabindex="-1">¿Qué consecuencias ha tenido?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="duran"><span class="calc-op-nom">Secuelas que duran</span></button>
+            <button class="calc-op" type="button" data-valor="temporales"><span class="calc-op-nom">Temporales, ya recuperado</span></button>
+            <button class="calc-op" type="button" data-valor="fallecimiento"><span class="calc-op-nom">Fallecimiento de un familiar</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="informes" aria-labelledby="p-informes" hidden>
+          <h2 id="p-informes" tabindex="-1">¿Tienes informes o historia clínica?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="si"><span class="calc-op-nom">Sí</span></button>
+            <button class="calc-op" type="button" data-valor="parte"><span class="calc-op-nom">En parte</span></button>
+            <button class="calc-op" type="button" data-valor="no"><span class="calc-op-nom">No</span></button>
+          </div>
+        </section>
+
+        <!-- Clàusules -->
+        <section class="calc-pas" data-pas="tipo" aria-labelledby="p-tipo" hidden>
+          <h2 id="p-tipo" tabindex="-1">¿Qué te preocupa?</h2>
+          <div class="calc-ops calc-ops-dues">
+            <button class="calc-op" type="button" data-valor="suelo"><span class="calc-op-nom">Cláusula suelo</span><span class="calc-op-desc">El interés no bajaba aunque bajara el euríbor.</span></button>
+            <button class="calc-op" type="button" data-valor="gastos"><span class="calc-op-nom">Gastos de la hipoteca</span><span class="calc-op-desc">Notaría, registro, gestoría y tasación al firmar.</span></button>
+            <button class="calc-op" type="button" data-valor="irph"><span class="calc-op-nom">IRPH</span><span class="calc-op-desc">Tu hipoteca no va con el euríbor, sino con el IRPH.</span></button>
+            <button class="calc-op" type="button" data-valor="revolving"><span class="calc-op-nom">Tarjeta revolving</span><span class="calc-op-desc">Pagas cada mes y la deuda casi no baja.</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="importe" aria-labelledby="p-importe" hidden>
+          <h2 id="p-importe" tabindex="-1"><span data-escala="hipoteca">¿Cuál es el capital de tu hipoteca?</span><span data-escala="tarjeta" hidden>¿Cuánto llevas gastado en total con la tarjeta?</span></h2>
+          <p class="calc-ajuda">Mueve la barra. Una cifra aproximada es suficiente.</p>
+          <div class="calc-slider">
+            <output class="calc-xifra" for="calc-importe" aria-hidden="true" data-calc-importe-num>150.000 €</output>
+            <input type="range" id="calc-importe" min="30000" max="400000" step="5000" value="150000" aria-label="Capital de la hipoteca">
+            <div class="calc-slider-escala" aria-hidden="true"><span data-calc-min>30.000 €</span><span data-calc-max>400.000 €</span></div>
+            <button class="btn btn-principal" type="button" data-calc-continua>Continuar</button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="firma" aria-labelledby="p-firma" hidden>
+          <h2 id="p-firma" tabindex="-1">¿Cuándo la firmaste?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="antes2013"><span class="calc-op-nom">Antes de 2013</span></button>
+            <button class="calc-op" type="button" data-valor="2013a2019"><span class="calc-op-nom">Entre 2013 y 2019</span></button>
+            <button class="calc-op" type="button" data-valor="despues2019"><span class="calc-op-nom">Después de 2019</span></button>
+          </div>
+        </section>
+        <section class="calc-pas" data-pas="reclamado" aria-labelledby="p-reclamado" hidden>
+          <h2 id="p-reclamado" tabindex="-1">¿Ya reclamaste al banco?</h2>
+          <div class="calc-ops">
+            <button class="calc-op" type="button" data-valor="no"><span class="calc-op-nom">No</span></button>
+            <button class="calc-op" type="button" data-valor="sinrespuesta"><span class="calc-op-nom">Sí, sin respuesta</span></button>
+            <button class="calc-op" type="button" data-valor="denegado"><span class="calc-op-nom">Sí, y me dijeron que no</span></button>
+          </div>
+        </section>
+
+        <!-- Correu + consentiment + captcha -->
+        <section class="calc-pas" data-pas="correu" aria-labelledby="p-correu" hidden>
+          <h2 id="p-correu" tabindex="-1">Casi está. ¿A qué correo te enviamos el resultado?</h2>
+          <p class="calc-ajuda">Te mandamos un código para confirmar que el correo es tuyo. Después verás el resultado aquí mismo.</p>
+          <form class="calc-form" data-calc-form-correu novalidate>
+            <label for="calc-email">Correo electrónico</label>
+            <div class="calc-fila">
+              <input id="calc-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+              <button class="btn btn-principal" type="submit">Enviar código</button>
+            </div>
+            <label class="casella calc-consentiment">
+              <input type="checkbox" name="consentimiento">
+              <span data-consentiment="general">He leído y acepto que Hechos Abogados trate mis datos para responder a mi consulta. Ver la <a href="privacidad.html">política de privacidad</a>.</span>
+              <span data-consentiment="salud" hidden>Doy mi consentimiento expreso para que Hechos Abogados trate los datos de salud que he indicado (consecuencias, informes clínicos) con el único fin de valorar mi caso. Puedo retirarlo cuando quiera. Ver la <a href="privacidad.html">política de privacidad</a>.</span>
+            </label>
+            <div class="calc-captcha" id="calc-turnstile"></div>
+            <p class="calc-error" data-calc-error role="alert"></p>
+          </form>
+        </section>
+
+        <!-- Codi -->
+        <section class="calc-pas" data-pas="codi" aria-labelledby="p-codi" hidden>
+          <h2 id="p-codi" tabindex="-1">Escribe el código</h2>
+          <p class="calc-ajuda">Te hemos enviado un código de 6 cifras a <strong data-calc-correu></strong>. Caduca en 10 minutos.</p>
+          <form class="calc-form" data-calc-form-codi novalidate>
+            <fieldset class="calc-codi">
+              <legend class="visually-hidden">Código de verificación de 6 cifras</legend>
+              <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" aria-label="Cifra 1">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Cifra 2">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Cifra 3">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Cifra 4">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Cifra 5">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="Cifra 6">
+            </fieldset>
+            <p class="calc-error" data-calc-error role="alert"></p>
+            <div class="calc-accions">
+              <button class="calc-enllac" type="button" data-calc-reenvia disabled>¿No te ha llegado? Enviar otra vez</button>
+              <button class="calc-enllac" type="button" data-calc-canvia-correu>Cambiar el correo</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Resultat: l'escrit -->
+        <section class="calc-pas calc-resultat" data-pas="resultat" aria-labelledby="p-resultat" hidden>
+          <p class="calc-intro">Aquí tienes tu resultado. Te lo hemos enviado también por correo.</p>
+          <h2 id="p-resultat" tabindex="-1" class="escrit-titol">Tu caso: <span data-calc-area></span></h2>
+
+          <div class="escrit-apartat">
+            <h3>Hechos</h3>
+            <ol class="escrit-fets" data-calc-fets></ol>
+          </div>
+          <div class="escrit-apartat">
+            <h3>Lo que vemos</h3>
+            <p class="escrit-veredicte" data-calc-orientacio></p>
+            <p data-calc-explica></p>
+            <div class="escrit-avisos" data-calc-avisos hidden></div>
+          </div>
+          <div class="escrit-apartat" data-calc-recupera-bloc hidden>
+            <h3>Lo que podrías recuperar</h3>
+            <p class="escrit-xifra" data-calc-recupera></p>
+            <p class="nota">Cifra orientativa y redondeada. El importe exacto sale de tu contrato y de lo que has pagado.</p>
+          </div>
+          <div class="escrit-apartat">
+            <h3>Plazo</h3>
+            <p data-calc-plazo></p>
+          </div>
+          <div class="escrit-apartat">
+            <h3>Honorarios orientativos</h3>
+            <p data-calc-honoraris></p>
+          </div>
+          <p class="escrit-avis">Es una orientación, no un consejo legal: lo confirma un abogado leyendo tus papeles.</p>
+
+          <div class="botons">
+            <a class="btn btn-wa calc-wa" data-calc-wa href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+              Hablar por WhatsApp
+            </a>
+            <a class="btn btn-linia" href="tel:+34600000000">Llamar</a>
+          </div>
+          <p class="nota">Se abrirá WhatsApp con tu caso ya resumido. Solo tienes que enviarlo.</p>
+          <div class="calc-accions">
+            <a class="calc-enllac" href="contacto.html">Prefiero que me escribáis</a>
+            <button class="calc-enllac" type="button" data-calc-reinicia>Hacer otro test</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="peu peu-mini">
+    <div class="wrap">
+      <div class="peu-baix">
+        <span>© 2026 Hechos Abogados</span>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/traduccions.js" defer></script>
+  <script src="js/calculadora.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
